@@ -4,13 +4,10 @@
 
 """
 #Function Name: The function should be named count_vowels.
-
 #Parameters: The function should take one parameter named string, 
                 which represents the input string.
-
 #Functionality: The function should count the number of vowels 
                 (both lowercase and uppercase) in the input string and return the count.
-
 #Implementation: Inside the function, use a loop to iterate through 
                 each character of the input string. Check if each character is a vowel 
                 (either lowercase or uppercase) by comparing it to a string containing 
@@ -19,4 +16,10 @@
                 variable as the result.
 
 """
-
+def count_vowels(string):
+    vowels = "aeiouAEIOU"  # Correct set of vowels
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
